@@ -13,7 +13,7 @@ public class PolicyRepositoryImplementation implements IPolicyRepository
 		PreparedStatement psmt;
 		ResultSet rsp;
 		
-		public void PolicyDaoImpl() {
+		public PolicyRepositoryImplementation() {
 			try {
 				con=ConnectionUtil.getConnection();
 			} catch(SQLException e) {
@@ -32,26 +32,7 @@ public class PolicyRepositoryImplementation implements IPolicyRepository
 			}
 			return policy;
 		}
-		@Override
-		public Policy addPolicy(Policy Policy) throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public Policy getPolicyByPolicyNumber(Long PolicyNumber) throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public Policy updatePolicy(Policy Policy) throws SQLException {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public boolean deletePolicy(Long PolicyNumber) throws SQLException {
-			// TODO Auto-generated method stub
-			return false;
-		}
+		
 		
 
 	}
